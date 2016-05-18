@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 // Add any fields you want to be saved for each user and specify the field name in the JSON coming back from Facebook
 // http://go.microsoft.com/fwlink/?LinkId=301877
 
-namespace WebApplication1.Models
+namespace SampleFacebookBirthdayApp.Models
 {
     public class MyAppUser
     {
@@ -13,7 +13,7 @@ namespace WebApplication1.Models
         public string Email { get; set; }
 
         [JsonProperty("picture")] // This renames the property to picture.
-        [FacebookFieldModifier("type(large)")] // This sets the picture size to large.
+        //[FacebookFieldModifier("type(large)")] // This sets the picture size to large.
         public FacebookConnection<FacebookPicture> ProfilePicture { get; set; }
 
         [FacebookFieldModifier("limit(8)")] // This sets the size of the friend list to 8, remove it to get all friends.

@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Models
+﻿namespace SampleFacebookBirthdayApp.Models
 {
     public class FacebookPicture
     {
